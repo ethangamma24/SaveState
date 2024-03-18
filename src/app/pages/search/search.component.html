@@ -1,0 +1,363 @@
+<div class="search-container">
+  <div class="search-filters">
+    <br />
+    <mat-form-field class="dropdown">
+      <mat-label>Character</mat-label>
+      <mat-select [(value)]="character_filter">
+        <mat-option value="Fox">
+          <img class="stock-icon" src="../../assets/Fox.png" />Fox
+        </mat-option>
+        <mat-option value="Falco">
+          <img class="stock-icon" src="../../assets/Falco.png" />Falco
+        </mat-option>
+        <mat-option value="Marth">
+          <img class="stock-icon" src="../../assets/Marth.png" />Marth
+        </mat-option>
+        <mat-option value="Jigglypuff">
+          <img class="stock-icon" src="../../assets/Jigglypuff.png" />Jigglypuff
+        </mat-option>
+        <mat-option value="Sheik">
+          <img class="stock-icon" src="../../assets/Sheik.png" />Sheik
+        </mat-option>
+        <mat-option value="Captain Falcon">
+          <img
+            class="stock-icon"
+            src="../../assets/Captain Falcon.png"
+          />Captain Falcon
+        </mat-option>
+        <mat-option value="Peach">
+          <img class="stock-icon" src="../../assets/Peach.png" />Peach
+        </mat-option>
+        <mat-option value="Ice Climbers">
+          <img class="stock-icon" src="../../assets/Ice Climbers.png" />Ice
+          Climbers
+        </mat-option>
+        <mat-option value="Pikachu">
+          <img class="stock-icon" src="../../assets/Pikachu.png" />Pikachu
+        </mat-option>
+        <mat-option value="Samus">
+          <img class="stock-icon" src="../../assets/Samus.png" />Samus
+        </mat-option>
+        <mat-option value="Dr. Mario">
+          <img class="stock-icon" src="../../assets/Doctor Mario.png" />Doctor
+          Mario
+        </mat-option>
+        <mat-option value="Yoshi">
+          <img class="stock-icon" src="../../assets/Yoshi.png" />Yoshi
+        </mat-option>
+        <mat-option value="Luigi">
+          <img class="stock-icon" src="../../assets/Luigi.png" />Luigi
+        </mat-option>
+        <mat-option value="Ganondorf">
+          <img class="stock-icon" src="../../assets/Ganondorf.png" />Ganondorf
+        </mat-option>
+        <mat-option value="Mario">
+          <img class="stock-icon" src="../../assets/Mario.png" />Mario
+        </mat-option>
+        <mat-option value="Young Link">
+          <img class="stock-icon" src="../../assets/Young Link.png" />Young Link
+        </mat-option>
+        <mat-option value="Donkey Kong">
+          <img class="stock-icon" src="../../assets/Donkey Kong.png" />Donkey
+          Kong
+        </mat-option>
+        <mat-option value="Link">
+          <img class="stock-icon" src="../../assets/Link.png" />Link
+        </mat-option>
+        <mat-option value="Game & Watch">
+          <img class="stock-icon" src="../../assets/Game & Watch.png" />Game &
+          Watch
+        </mat-option>
+        <mat-option value="Roy">
+          <img class="stock-icon" src="../../assets/Roy.png" />Roy
+        </mat-option>
+        <mat-option value="Mewtwo">
+          <img class="stock-icon" src="../../assets/Mewtwo.png" />Mewtwo
+        </mat-option>
+        <mat-option value="Ness">
+          <img class="stock-icon" src="../../assets/Ness.png" />Ness
+        </mat-option>
+        <mat-option value="Pichu">
+          <img class="stock-icon" src="../../assets/Pichu.png" />Pichu
+        </mat-option>
+        <mat-option value="Zelda">
+          <img class="stock-icon" src="../../assets/Zelda.png" />Zelda
+        </mat-option>
+        <mat-option value="Kirby">
+          <img class="stock-icon" src="../../assets/Kirby.png" />Kirby
+        </mat-option>
+        <mat-option value="Bowser">
+          <img class="stock-icon" src="../../assets/Bowser.png" />Bowser
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="dropdown">
+      <mat-label>Opponent</mat-label>
+      <mat-select [(value)]="opponent_filter">
+        <mat-option value="Any">Any</mat-option>
+        <mat-option value="Fox">
+          <img class="stock-icon" src="../../assets/Fox.png" />Fox
+        </mat-option>
+        <mat-option value="Falco">
+          <img class="stock-icon" src="../../assets/Falco.png" />Falco
+        </mat-option>
+        <mat-option value="Marth">
+          <img class="stock-icon" src="../../assets/Marth.png" />Marth
+        </mat-option>
+        <mat-option value="Jigglypuff">
+          <img class="stock-icon" src="../../assets/Jigglypuff.png" />Jigglypuff
+        </mat-option>
+        <mat-option value="Sheik">
+          <img class="stock-icon" src="../../assets/Sheik.png" />Sheik
+        </mat-option>
+        <mat-option value="Captain Falcon">
+          <img
+            class="stock-icon"
+            src="../../assets/Captain Falcon.png"
+          />Captain Falcon
+        </mat-option>
+        <mat-option value="Peach">
+          <img class="stock-icon" src="../../assets/Peach.png" />Peach
+        </mat-option>
+        <mat-option value="Ice Climbers">
+          <img class="stock-icon" src="../../assets/Ice Climbers.png" />Ice
+          Climbers
+        </mat-option>
+        <mat-option value="Pikachu">
+          <img class="stock-icon" src="../../assets/Pikachu.png" />Pikachu
+        </mat-option>
+        <mat-option value="Samus">
+          <img class="stock-icon" src="../../assets/Samus.png" />Samus
+        </mat-option>
+        <mat-option value="Dr. Mario">
+          <img class="stock-icon" src="../../assets/Doctor Mario.png" />Doctor
+          Mario
+        </mat-option>
+        <mat-option value="Yoshi">
+          <img class="stock-icon" src="../../assets/Yoshi.png" />Yoshi
+        </mat-option>
+        <mat-option value="Luigi">
+          <img class="stock-icon" src="../../assets/Luigi.png" />Luigi
+        </mat-option>
+        <mat-option value="Ganondorf">
+          <img class="stock-icon" src="../../assets/Ganondorf.png" />Ganondorf
+        </mat-option>
+        <mat-option value="Mario">
+          <img class="stock-icon" src="../../assets/Mario.png" />Mario
+        </mat-option>
+        <mat-option value="Young Link">
+          <img class="stock-icon" src="../../assets/Young Link.png" />Young Link
+        </mat-option>
+        <mat-option value="Donkey Kong">
+          <img class="stock-icon" src="../../assets/Donkey Kong.png" />Donkey
+          Kong
+        </mat-option>
+        <mat-option value="Link">
+          <img class="stock-icon" src="../../assets/Link.png" />Link
+        </mat-option>
+        <mat-option value="Game & Watch">
+          <img class="stock-icon" src="../../assets/Game & Watch.png" />Game &
+          Watch
+        </mat-option>
+        <mat-option value="Roy">
+          <img class="stock-icon" src="../../assets/Roy.png" />Roy
+        </mat-option>
+        <mat-option value="Mewtwo">
+          <img class="stock-icon" src="../../assets/Mewtwo.png" />Mewtwo
+        </mat-option>
+        <mat-option value="Ness">
+          <img class="stock-icon" src="../../assets/Ness.png" />Ness
+        </mat-option>
+        <mat-option value="Pichu">
+          <img class="stock-icon" src="../../assets/Pichu.png" />Pichu
+        </mat-option>
+        <mat-option value="Zelda">
+          <img class="stock-icon" src="../../assets/Zelda.png" />Zelda
+        </mat-option>
+        <mat-option value="Kirby">
+          <img class="stock-icon" src="../../assets/Kirby.png" />Kirby
+        </mat-option>
+        <mat-option value="Bowser">
+          <img class="stock-icon" src="../../assets/Bowser.png" />Bowser
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="dropdown">
+      <mat-label>Stage</mat-label>
+      <mat-select [(value)]="stage_filter">
+        <mat-option value="Any">Any</mat-option>
+        <mat-option value="Battlefield">Battlefield</mat-option>
+        <mat-option value="Dreamland">Dreamland</mat-option>
+        <mat-option value="Final Destination">Final Destination</mat-option>
+        <mat-option value="Fountain of Dreams">Fountain of Dreams</mat-option>
+        <mat-option value="Pokemon Stadium">Pokemon Stadium</mat-option>
+        <mat-option value="Yoshi's Story">Yoshi's Story</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="dropdown">
+      <mat-label>Training Type</mat-label>
+      <mat-select [formControl]="training_type">
+        <mat-option *ngFor="let type of training_type_list" [value]="type">{{
+          type
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="last-dropdown">
+      <mat-label>Training Mode Version</mat-label>
+      <mat-select [formControl]="version">
+        <mat-option *ngFor="let version of version_list" [value]="version">{{
+          version
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-stroked-button color="accent" (click)="search()">
+      <mat-icon color="white">search</mat-icon>
+    </button>
+  </div>
+</div>
+<div class="table-container">
+  <div style="display: inline-block; width: 80%">
+    <!-- <div style="text-align: left">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter" />
+      </mat-form-field>
+    </div> -->
+    <mat-table
+      #table
+      [dataSource]="data_source"
+      matSort
+      class="mat-elevation-z8"
+      matSortActive="downloads"
+      matSortDirection="desc"
+      matSortDisableClear="true"
+    >
+      <ng-container matColumnDef="username">
+        <mat-header-cell *matHeaderCellDef mat-sort-header
+          >User</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row"
+          ><a routerLink="/profile/{{ row.username.S || row.username }}">{{
+            row.username.S || row.username
+          }}</a></mat-cell
+        >
+      </ng-container>
+      <ng-container matColumnDef="file_name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header
+          >Name</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row">{{
+          row.title.S || row.title
+        }}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="character">
+        <mat-header-cell *matHeaderCellDef mat-sort-header
+          >Character</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row"
+          ><img
+            class="stock-icon-table"
+            src="../../assets/{{ row.character.S || row.character }}.png"
+        /></mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="opponent">
+        <mat-header-cell *matHeaderCellDef mat-sort-header
+          >Opponent</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row"
+          ><img
+            class="stock-icon-table"
+            src="../../assets/{{ row.opponent.S || row.opponent }}.png"
+        /></mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="stage">
+        <mat-header-cell *matHeaderCellDef mat-sort-header
+          >Stage</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row"
+          ><img
+            class="stage-pic"
+            src="../../assets/{{ row.stage.S || row.stage }}.jpg"
+        /></mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="training_type">
+        <mat-header-cell *matHeaderCellDef mat-sort-header
+          >Type</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row">{{
+          row.training_type.S || row.training_type
+        }}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="version">
+        <mat-header-cell *matHeaderCellDef mat-sort-header
+          >Version</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row">{{
+          row.version.S || row.version
+        }}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="downloads">
+        <mat-header-cell *matHeaderCellDef mat-sort-header
+          >Downloads</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row">{{
+          row.downloads.N || row.downloads
+        }}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="download-button">
+        <mat-header-cell *matHeaderCellDef></mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <button mat-stroked-button color="accent" (click)="downloadFile(row)">
+            <mat-icon>download</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+
+      // TODO: Figure out why the row expansion stuff isn't working.
+
+      <!-- <ng-container matColumnDef="expandedDetail">
+        <mat-cell *matCellDef="let row" [attr.colspan]="columns.length">
+          <div class="mat-row detail-row" [@detailExpand]="row == expandedRow ? 'expanded' : 'collapsed'">
+            {{ row.description }}
+          </div>
+        </mat-cell>
+      </ng-container> -->
+
+      <mat-header-row *matHeaderRowDef="columns; stick: false"></mat-header-row>
+      <!-- <mat-row
+        *matRowDef="let row; columns: columns"
+        mat-Ripple
+        class="savestate-row"
+        [class.expanded-savestate-row]="expandedRow == row"
+        (click)="expandedRow = row"
+      ></mat-row>
+      <mat-row
+        *matRowDef="let row; columns: ['expandedDetail']; when: isExpansionDetailRow"
+        [@detailExpand]="row.element == expandedRow ? 'expanded' : 'collapsed'"
+        style="overflow: hidden"
+        class="detail-row"
+      ></mat-row> -->
+      <mat-row
+        *matRowDef="let row; columns: columns"
+        matRipple
+        class="savestate-row"
+        [cdkDetailRow]="row"
+        [cdkDetailRowTpl]="tpl"
+      ></mat-row>
+    </mat-table>
+    <mat-paginator
+      [length]="length"
+      [pageSize]="page_size"
+      [pageSizeOptions]="page_size_options"
+    >
+    </mat-paginator>
+  </div>
+
+  <ng-template #tpl let-row>
+    <div
+      class="mat-row detail-row"
+      [@detailExpand]
+      style="overflow: hidden"
+      [innerText]="row.description.S || row.description"
+    ></div>
+  </ng-template>
+</div>
